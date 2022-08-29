@@ -1,0 +1,46 @@
+@import './App.scss';
+
+.n-wrapper{
+  height: 10vh;
+  font-family: $second-font;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+.n-left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.n-name{
+  font-weight: 700;
+}
+
+.n-list{
+  flex: 6;
+}
+
+.n-list > ul{
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  justify-content: flex-start;
+}
+
+.n-list > ul :hover{
+  cursor: pointer;
+  color: $dark-yellow;
+  font-weight: 700;
+}
+
+.n-right{
+  flex: 1;
+}
+
+.n-icons > * {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}

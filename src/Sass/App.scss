@@ -4,7 +4,7 @@ $base-yellow: #CBB25B;
 $dark-yellow: #E4A951;
 $gray: #D9D9D9;
 $boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-$button-font: 'Barlow', sans-serif;
+$second-font: 'Barlow', sans-serif;
 $main-font: 'Battambang', cursive;
 
 
@@ -15,4 +15,5 @@ $main-font: 'Battambang', cursive;
   background: $base-green; 
   font-family: $main-font;
   font-weight: normal;
+  padding: 0.5rem 3.5rem;
 }
