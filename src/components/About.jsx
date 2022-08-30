@@ -1,12 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion'
 import '../Sass/About.scss';
 import Raven from '../img/Raven.png';
 
 function About() {
+
+  // Motion Transition
+  const transition = { duration: 2, type: "spring" };
+
   return (
     <div className="a-wrapper">
       <div className="a-background">
-          <img src={Raven} alt="" />
+          <motion.img
+          initial={{top: '5rem', left:'-8rem'}}
+          whileInView={{top: '5rem', left:'0rem'}}
+          transition={transition} 
+          src={Raven} alt="" />
       </div>
       <div className="a-main">
         <div className="a-top">
