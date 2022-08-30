@@ -1,17 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../src/Sass/App.scss';
-import About from './components/About';
-import BooksIntro from './components/Books/BooksIntro';
+import Home from './components/Home';
 import Footer from './components/Books/Footer';
 import Navbar from './components/Navbar';
+import LiamHicks from './components/LiamHicks/LiamHicks';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <BooksIntro />
-      <About />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route exact path ="/" element={<Home />}/>
+          <Route exact path ="/liamhicks" element={<LiamHicks />}/>
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

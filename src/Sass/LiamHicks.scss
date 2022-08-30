@@ -1,0 +1,107 @@
+@import './App.scss';
+
+
+.lh-wrapper{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.series-title{
+  font-family: $second-font;
+}
+
+.lh-wrapper .swiper {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+}
+
+.lh-wrapper .swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// .lh-wrapper .swiper-horizontal>.swiper-pagination-bullets{
+//   background: $gray;
+//   border-radius: 50px;
+//   width: 20rem;
+// }
+
+.lh-wrapper .swiper-pagination-bullet-active{
+  background: $dark-yellow;
+}
+
+.lh-wrapper .swiper-button-next:after{
+  color: $dark-yellow;
+}
+
+.lh-wrapper .swiper-button-prev:after{
+  color: $dark-yellow;
+}
+
+.book-info{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  gap: 2rem;
+}
+
+.book-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-left .AmazonButton{
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 8px 18px 8px 18px;
+  background: black;
+  align-items: center;
+
+  &:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 1px;
+    color: black;
+  }
+}
+
+.book-left > img {
+  width: 240px;
+  height: 365px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 10px;
+  margin: 5%;
+}
+
+.book-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-size: small;
+}
+
+.book-right>:nth-child(1){
+  color: $base-yellow;
+  font-family: $second-font;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: start;
+}
+
