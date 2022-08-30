@@ -1,0 +1,35 @@
+@import './App.scss';
+
+.footer{
+  background: $base-yellow;
+  height: 10vh;
+  display:flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  margin-top: -2rem;
+  position: relative;
+}
+
+.f-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  color: $base-green;
+}
+
+.f-icons{
+  display: flex;
+  gap: 1rem;
+}
+
+.f-icons > a:any-link {
+  color: $base-green;
+  
+  &:hover {
+    color: $lighter-green;
+    font-size: large;
+  }
+}
