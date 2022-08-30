@@ -1,0 +1,44 @@
+@import './App.scss';
+
+.bintro-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin-top: 1rem;
+}
+
+.bi-top{
+  position: relative;
+  z-index: 1;
+  font-family: $second-font;
+  margin-bottom: 1.5rem;
+}
+
+.bi-background {
+  z-index: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: -5%;
+}
+
+.bi-background > img {
+  margin-top: -4rem;
+  position: absolute;
+  opacity: 0.3;
+}
+
+
+
+.bi-bottom{
+  z-index: 1;
+}
+
+.bookslist{
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.5rem;
+
+}
