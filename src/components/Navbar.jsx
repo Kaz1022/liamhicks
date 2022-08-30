@@ -12,7 +12,7 @@ function Navbar() {
         <div className="n-list">
           <ul style={{listStyleType: 'none'}}>
             <li>Books</li>
-            <li>Biography</li>
+            <li>About the Author</li>
           </ul>
         </div>
       </div>

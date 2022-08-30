@@ -1,0 +1,55 @@
+@import './App.scss';
+
+.a-wrapper{
+  height: 90vh;
+  margin-top: -3rem;
+  position: relative;
+}
+
+.a-background{
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.a-background > img {
+  transform: scale(0.9);
+  position: absolute;
+  margin-left: -10%;
+  opacity: 0.3;
+}
+
+.a-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.a-top{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.a-titles{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.a-titles>:nth-child(1){
+  font-size: x-large;
+}
+
+.a-titles>:nth-child(2){
+  font-size: xx-large;
+}
+
+
+
+.a-bottom {
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  color: $gray;
+  z-index: 1;
+}
