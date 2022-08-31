@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import '../../Sass/LiamHicks.scss';
 import Testimonial from './Testimonial';
 import { Swiper, SwiperSlide }  from 'swiper/react';
@@ -16,6 +17,9 @@ import NavbarDif from '../NavbarDif';
 
 
 function LiamHicks() {
+
+  const location = useLocation();
+  const { clickedIndex } = location.state;
 
   const books = [
     {
@@ -55,6 +59,7 @@ function LiamHicks() {
         slidesPerView={1}
         pagination={{clickable: true}}
         navigation={{clickable: true}}
+        initialSlide={clickedIndex-1}
       >
         {books.map((book, index) => {
           return(

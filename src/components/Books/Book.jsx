@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAmazon } from '@fortawesome/free-brands-svg-icons';
 
 
-function Book({img, url}) {
+function Book({img, url, id}) {
   return (
     <div className="book">
       <div className="img-container">
         <img src={img} alt="" className="image"/>
         <div className="middle">
-          <div className="text"><Link to="/liamhicks" style={{textDecoration: 'none'}}>READ MORE</Link></div>
+          <div className="text"><Link to="/liamhicks" state={{ clickedIndex: id }} style={{textDecoration: 'none'}}>READ MORE</Link></div>
         </div>
       </div>
       <a href={url} target="_blank" without rel="noreferrer">

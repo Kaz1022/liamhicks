@@ -30,6 +30,7 @@ function BooksList() {
     return (
       <Book
         key={book.id}
+        id={book.id}
         img={book.img}
         url={book.url}
       />
