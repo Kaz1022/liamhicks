@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../Sass/Book.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAmazon } from '@fortawesome/free-brands-svg-icons';
@@ -9,8 +10,8 @@ function Book({img, url}) {
     <div className="book">
       <div className="img-container">
         <img src={img} alt="" className="image"/>
-        <div class="middle">
-          <div class="text">READ MORE</div>
+        <div className="middle">
+          <div className="text"><Link to="/liamhicks" style={{textDecoration: 'none'}}>READ MORE</Link></div>
         </div>
       </div>
       <a href={url} target="_blank" without rel="noreferrer">

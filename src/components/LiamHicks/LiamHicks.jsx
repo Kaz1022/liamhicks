@@ -11,6 +11,7 @@ import Bluejay from '../../img/bluejay.jpg';
 import RavenCalls from '../../img/ravencalls.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAmazon } from '@fortawesome/free-brands-svg-icons';
+import NavbarDif from '../NavbarDif';
 
 
 
@@ -43,6 +44,7 @@ function LiamHicks() {
 
   return (
     <>
+    <NavbarDif />
     <div className="lh-wrapper">
       <div className="series-title">
         <h1>Liam Hick's Book Series</h1>

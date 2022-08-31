@@ -1,38 +1,24 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
 import '../Sass/Navbar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faSquareFacebook, faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
 
-
-function Navbar() {
+function NavbarDif() {
   return (
     <div className="n-wrapper">
       <div className="n-left">
         <div className="n-name"><Link style={{textDecoration: 'none'}} to="/">Brian Baynton</Link></div>
-        <div className="n-list">
+        {/* <div className="n-list">
           <ul style={{listStyleType: 'none'}}>
-            <ScrollLink
-              to="booksintro"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
+          <Link style={{textDecoration: 'none'}} to="/">
               <li>Books</li>
-            </ScrollLink>
-            <ScrollLink
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
+          </Link>
+          <Link style={{textDecoration: 'none'}} to="/">
               <li>About the Author</li>
-            </ScrollLink>
+          </Link>
           </ul>
-        </div>
+        </div> */}
       </div>
 
       <div className="n-right">
@@ -52,4 +38,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default NavbarDif

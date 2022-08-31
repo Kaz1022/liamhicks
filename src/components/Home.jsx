@@ -1,13 +1,17 @@
 import React from 'react'
 import About from './About';
 import BooksIntro from './Books/BooksIntro';
+import Navbar from './Navbar';
 
 function Home() {
   return (
-    <div className="home">
-      <BooksIntro />
-      <About />
-    </div>
+    <>
+      <Navbar />
+      <div className="home">
+        <BooksIntro />
+        <About />
+      </div>
+    </>
   )
 }
 

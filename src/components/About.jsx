@@ -9,7 +9,7 @@ function About() {
   const transition = { duration: 2, type: "spring" };
 
   return (
-    <div className="a-wrapper">
+    <div className="a-wrapper" id="about">
       <div className="a-background">
           <motion.img
           initial={{top: '5rem', left:'-8rem'}}

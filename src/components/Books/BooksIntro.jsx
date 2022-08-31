@@ -11,7 +11,7 @@ function BooksIntro() {
   const transition = { duration: 2, type: "spring" };
 
   return (
-    <div className="bintro-wrapper">
+    <div className="bintro-wrapper" id="booksintro">
       <div className="bi-top">
         <h1>Liam Hick's Book Series</h1>
          {/* animation */}

@@ -39,11 +39,11 @@
   opacity: 1;
 }
 
-.text {
+.text > a:any-link {
   background-color: $base-yellow;
   color: white;
   font-size: 12px;
-  padding: 16px 32px;
+  padding: 10px 10px;
   border-radius: 10px;
   font-family: $second-font;
   font-weight: bold;
