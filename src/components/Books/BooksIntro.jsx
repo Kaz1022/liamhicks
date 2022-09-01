@@ -13,7 +13,7 @@ function BooksIntro() {
   return (
     <div className="bintro-wrapper" id="booksintro">
       <div className="bi-top">
-        <h1>Liam Hick's Book Series</h1>
+        <h1>Liam Hicks Book Series</h1>
          {/* animation */}
         <div className="bi-background">
           <motion.img 

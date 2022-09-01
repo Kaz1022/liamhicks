@@ -51,7 +51,7 @@ function LiamHicks() {
       <NavbarDif />
       <div className="lh-wrapper">
         <div className="series-title">
-          <h1>Liam Hick's Book Series</h1>
+          <h1>Liam Hicks Book Series</h1>
         </div>
         {/* slider */}
         <Swiper

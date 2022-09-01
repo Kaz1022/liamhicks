@@ -40,5 +40,49 @@
   flex-direction: row;
   justify-content: center;
   gap: 2.5rem;
+}
 
+/*  Small Device Styles */
+@media (max-width: 500px) {
+
+  .bi-background {
+    margin-right: 0%;
+  }
+
+  .bi-top{
+    position: relative;
+    z-index: 1;
+    font-family: $main-font;
+    font-size: 0.6rem;
+    margin-bottom: -5rem;
+  }
+
+  .bi-bottom{
+    transform: scale(0.8);
+  }
+
+  .bookslist{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+  
+  }
+
+}
+
+/*  Smaller Tablet Styles */
+@media (min-width: 501px) and (max-width: 740px) {
+  .bi-bottom{
+    transform: scale(0.6);
+  }
+}
+
+/*  Smaller Tablet Styles */
+@media (min-width: 741px) and (max-width: 905px) {
+  .bi-bottom{
+    transform: scale(0.8);
+  }
 }
