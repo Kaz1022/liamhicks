@@ -77,7 +77,7 @@
 }
 
 /*  Small Device Styles */
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .n-wrapper{
     margin: -0.5rem -3.5rem;
     height: 10vh;
@@ -143,19 +143,50 @@
   }
 }
 
-/*  Tablet Styles */
-@media (min-width: 768px) and (max-width: 1023px) {
+/*  Smaller Tablet Styles */
+@media (min-width: 501px) and (max-width: 905px) {
   .n-wrapper{
-    margin-top: -0.5rem;
-    height: 10vh;
-    width: 100%;
-    font-family: $second-font;
-    font-weight: normal;
-    display: flex;
-    justify-content: space-between;
+    margin: -0.5rem -3.5rem;
     background: $base-green;
-    position: fixed;
     z-index: 2;
+    position: fixed;
+  }
+
+  .n-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+  
+  .n-name{
+    font-size: 1rem;
+    font-weight: 700;
+    width: 10rem;
+  }
+   
+   .n-list > ul{
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-left: -3rem;
+    justify-content: flex-start;
+    width: 15rem;
+  }
+    
+  .n-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-right: 20%;
+  }
+  
+  .n-icons {
+   flex: 6;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   gap: 1rem; 
   }
 }
 
