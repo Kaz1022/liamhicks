@@ -5,12 +5,33 @@
   color: white;
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
 }
 
 .t-container{
-  width: 50rem;
-  height: 30rem;
-  padding:3rem;
-  background: $lighter-green;
+  width: 60%;
+  height: 60%;
+  padding:5rem 10rem;
+  background: rgba($lighter-green, 0.3);
 }
+
+.t-header{
+  margin-top: -2rem;
+  margin-bottom: 1.5rem;
+  font-size: x-large;
+}
+
+.t-review{
+  display: flex;
+  flex-direction: column;
+}
+
+.t-review>:nth-child(1){
+  font-style: italic;
+}
+
+.t-review>:nth-child(2){
+  margin-right: -25rem;
+}
+

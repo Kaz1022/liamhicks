@@ -43,12 +43,12 @@ function Navbar() {
               duration={500}
               onClick={hideNavbar}
             >
-              <li>About the Author</li>
+              <li>Bio</li>
             </ScrollLink>
           </ul>
         </div>
-        <div className="n-button">
-          <button className="nav-btn" onClick={showNavbar}>
+        <div className="n-button"　onClick={showNavbar}>
+          <button className="nav-btn">
           <FontAwesomeIcon icon={faBars} />
           </button>
         </div>

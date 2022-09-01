@@ -5,8 +5,6 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
   margin-top: 10vh;
   margin-left: 10rem;
   margin-right: 10rem;
@@ -15,7 +13,7 @@
 }
 
 .series-title{
-  font-family: $second-font;
+  font-family: $main-font;
 }
 
 .lh-wrapper .swiper {
@@ -23,22 +21,35 @@
   height: 100%;
   // padding: 2rem;
   text-align: start;
-  display: flex;
-  justify-content: center;
   margin-bottom: 5rem;
 }
 
 .lh-wrapper .swiper-slide{
   display: flex;
-  align-items: center;
   justify-content: center;
+  overflow-x: auto;
 }
 
-// .lh-wrapper .swiper-horizontal>.swiper-pagination-bullets{
-//   background: $gray;
-//   border-radius: 50px;
-//   width: 20rem;
+*::-webkit-scrollbar {
+  background: transparent;
+}
+// *::-webkit-scrollbar-track {
+//   background: $lighter-green;
+//   border-radius: 20px;
 // }
+
+// *::-webkit-scrollbar-thumb {
+//   background-color:$base-yellow;
+//   border-radius: 20px;
+//   border: 1px solid $base-yellow;
+// }
+
+.lh-wrapper .swiper-horizontal>.swiper-pagination-bullets{
+  background: rgba($gray, 0.1);
+  border-radius: 50px;
+  width: 15rem;
+  left: 3rem;
+}
 
 .lh-wrapper .swiper-pagination-bullet-active{
   background: $dark-yellow;
@@ -98,7 +109,7 @@
   flex-direction: column;
   align-items: flex-start;
   color: white;
-  font-size: small;
+  font-size: normal;
 }
 
 .book-right>:nth-child(1){
