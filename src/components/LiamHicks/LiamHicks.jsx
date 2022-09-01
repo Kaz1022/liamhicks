@@ -67,7 +67,7 @@ function LiamHicks() {
                 <div className="book-info">
                   <div className="book-left">
                     <img src={book.img} alt="" />
-                    <a href={book.url} target="_blank" without rel="noreferrer">
+                    <a href={book.url} target="_blank" rel="noopener noreferrer">
                     <button className="AmazonButton">
                       <FontAwesomeIcon icon={faAmazon} color={"#E4A951"}  /> Browse on Amazon
                     </button>

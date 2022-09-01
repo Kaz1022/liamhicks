@@ -9,13 +9,13 @@ function Footer() {
       <div className="f-content">
         <span>Brian Baynton</span>
         <div className="f-icons">
-          <a href="https://twitter.com/brian_baynton13" target="_blank" without rel="noreferrer">
+          <a href="https://twitter.com/brian_baynton13" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faSquareTwitter} size="xl" />
           </a>
-          <a href="https://www.facebook.com/D.BrianBaynton" target="_blank" without rel="noreferrer">
+          <a href="https://www.facebook.com/D.BrianBaynton" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faSquareFacebook} size="xl" />
           </a>
-          <a href="https://www.linkedin.com/in/brian-baynton-81ba0912/" target="_blank" without rel="noreferrer">
+          <a href="https://www.linkedin.com/in/brian-baynton-81ba0912/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} size="xl" />
           </a>
         </div>
