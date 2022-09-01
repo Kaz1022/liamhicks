@@ -70,3 +70,9 @@
   }
 }
 
+@media (max-width: 500px) {
+  .img-container:hover .image{
+    opacity: 0.8;
+  }
+}
+
