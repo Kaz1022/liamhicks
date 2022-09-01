@@ -1,0 +1,16 @@
+@import './App.scss';
+
+.t-wrapper{
+  height: 70vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.t-container{
+  width: 50rem;
+  height: 30rem;
+  padding:3rem;
+  background: $lighter-green;
+}

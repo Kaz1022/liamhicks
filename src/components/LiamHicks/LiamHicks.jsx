@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../../Sass/LiamHicks.scss';
-import Testimonial from './Testimonial';
 import { Swiper, SwiperSlide }  from 'swiper/react';
 import { Pagination, Navigation } from 'swiper';
 import "swiper/css";
@@ -13,6 +12,7 @@ import RavenCalls from '../../img/ravencalls.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAmazon } from '@fortawesome/free-brands-svg-icons';
 import NavbarDif from '../NavbarDif';
+import Testimonial from './Testimonial';
 
 
 
@@ -48,42 +48,44 @@ function LiamHicks() {
 
   return (
     <>
-    <NavbarDif />
-    <div className="lh-wrapper">
-      <div className="series-title">
-        <h1>Liam Hick's Book Series</h1>
+      <NavbarDif />
+      <div className="lh-wrapper">
+        <div className="series-title">
+          <h1>Liam Hick's Book Series</h1>
+        </div>
+        {/* slider */}
+        <Swiper
+          modules={[Pagination, Navigation]}
+          slidesPerView={1}
+          pagination={{clickable: true}}
+          navigation={{clickable: true}}
+          initialSlide={clickedIndex-1}
+        >
+          {books.map((book, index) => {
+            return(
+              <SwiperSlide key={index}>
+                <div className="book-info">
+                  <div className="book-left">
+                    <img src={book.img} alt="" />
+                    <a href={book.url} target="_blank" without rel="noreferrer">
+                    <button className="AmazonButton">
+                      <FontAwesomeIcon icon={faAmazon} color={"#E4A951"}  /> Browse on Amazon
+                    </button>
+                    </a>
+                  </div>
+                  <div className="book-right">
+                    <span>{book.title}</span>
+                    <span>{book.story}</span>
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
-      {/* slider */}
-      <Swiper
-        modules={[Pagination, Navigation]}
-        slidesPerView={1}
-        pagination={{clickable: true}}
-        navigation={{clickable: true}}
-        initialSlide={clickedIndex-1}
-      >
-        {books.map((book, index) => {
-          return(
-            <SwiperSlide key={index}>
-              <div className="book-info">
-                <div className="book-left">
-                  <img src={book.img} alt="" />
-                  <a href={book.url} target="_blank" without rel="noreferrer">
-                  <button className="AmazonButton">
-                    <FontAwesomeIcon icon={faAmazon} color={"#E4A951"}  /> Browse on Amazon
-                  </button>
-                  </a>
-                </div>
-                <div className="book-right">
-                  <span>{book.title}</span>
-                  <span>{book.story}</span>
-                </div>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
-    <Testimonial />
+      <div>
+        <Testimonial />
+      </div>
     </>
   )
 }

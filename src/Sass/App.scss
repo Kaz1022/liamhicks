@@ -1,7 +1,7 @@
-$base-green: #273933;
-$lighter-green: rgba($base-green, 0.58);
-$base-yellow: #CBB25B;
+$base-green: #5C6D70;
 $dark-yellow: #E4A951;
+$base-yellow: #CBB25B;
+$lighter-green: rgba($base-yellow, 0.30);
 $gray: #D9D9D9;
 $boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
 $second-font: 'Barlow', sans-serif;
@@ -17,3 +17,6 @@ $main-font: 'Battambang', cursive;
   font-weight: normal;
   padding: 0.5rem 3.5rem;
 }
+
+
+// $base-green: #273933
