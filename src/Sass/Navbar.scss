@@ -87,7 +87,7 @@
     font-weight: normal;
     display: flex;
     background: $base-green;
-    z-index: 2;
+    z-index: 5;
     position: fixed;
   }
 
@@ -150,7 +150,7 @@
   .n-wrapper{
     margin: -0.5rem -3.5rem;
     background: $base-green;
-    z-index: 2;
+    z-index: 5;
     position: fixed;
   }
 
