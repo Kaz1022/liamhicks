@@ -20,7 +20,7 @@ function About() {
       <div className="a-main">
         <div className="a-top">
           <div className="a-titles">
-            <span>AOUT THE AUTHOR</span>
+            <span>ABOUT THE AUTHOR</span>
             <span >BRIAN BAYNTON</span>
           </div>
         </div>
