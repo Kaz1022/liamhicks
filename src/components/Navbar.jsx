@@ -18,10 +18,14 @@ function Navbar() {
     navRef.current.classList.remove("responsive_nav")
   }
 
+  const goTop = () => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }
+
   return (
     <div className="n-wrapper">
       <div className="n-left">
-        <div className="n-name"><Link style={{textDecoration: 'none'}} to="/">Brian Baynton</Link>
+        <div className="n-name"><Link style={{textDecoration: 'none'}} to="/" onClick={goTop}>Brian Baynton</Link>
         </div>
         <div className="n-list" ref={navRef}>
           <ul style={{listStyleType: 'none'}}>
