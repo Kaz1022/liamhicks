@@ -185,6 +185,61 @@
 
 }
 
-// /*  Small to Medium Device Styles */
-// @media (min-width: 501px) and (max-width: 740px) {
-// }
+/*  Small Device Styles */
+@media (min-width: 501px) and (max-width: 1100px){
+  .lh-wrapper{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+
+  .lh-wrapper .swiper {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .book-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .lh-wrapper .swiper-button-next:after{
+    display: none;
+  }
+  
+  .lh-wrapper .swiper-button-prev:after{
+    display: none;
+  }
+
+  .book-right{
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .lh-wrapper .swiper-horizontal>.swiper-pagination-bullets{
+    all:revert;
+  }
+
+  .lh-wrapper .swiper-pagination-bullet{
+    background: white;
+    opacity: 0.5;
+  }
+
+  .lh-wrapper .swiper-pagination-bullet-active{
+    background: $dark-yellow;
+    opacity: 1;
+  }
+
+}
