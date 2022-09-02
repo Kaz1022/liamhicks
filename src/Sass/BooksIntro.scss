@@ -32,6 +32,7 @@
   margin-top: -4rem;
   position: absolute;
   opacity: 0.3;
+  transform: scale(0.8);
 }
 
 .bi-bottom{
@@ -61,6 +62,11 @@
     opacity: 0.6;
    }
 
+   .bi-background > img{
+    // transform: scale(0.5);
+    margin-top: -8rem;
+  }
+
   .bi-top{
     font-size: 0.8rem;
     margin-bottom: -10rem;
@@ -84,6 +90,14 @@
   .bi-top{
     font-size: 0.6rem;
   }
+
+  .bi-background > img{
+    transform: scale(0.4);
+    margin-top: -18rem;
+    margin-right: -12rem;
+    opacity: 0.8;
+  }
+
 }
 
 /*  Smaller Tablet Styles */
