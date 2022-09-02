@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="f-content">
-        <span>Brian Baynton</span>
+        <span>&copy; Brian Baynton</span>
         <div className="f-icons">
           <a href="https://twitter.com/brian_baynton13" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faSquareTwitter} size="xl" />
