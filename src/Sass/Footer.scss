@@ -13,23 +13,31 @@
 .f-content{
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   width: 100%;
+  height: 100%;
   color: $base-green;
+}
+
+.f-content >:nth-child(1){
+  position: absolute;
+  margin-top: 0.5rem;
+
 }
 
 .f-icons{
   display: flex;
   gap: 1rem;
+  position: absolute;
+  margin-top: 2.5rem;
 }
 
 .f-icons > * {
   color: $base-green;
   
   &:hover {
-    color: $dark-yellow;
+    color: white;
     font-size: large;
   }
 }
@@ -67,7 +75,7 @@
   }
   
   .f-icons > * {
-    color: $base-yellow;
+    color: $dark-yellow;
     
     &:hover {
       color: white;
