@@ -1,7 +1,11 @@
 # Liam Hicks Book Series Author's Website
-A static website for Author Brian Baynton. Created with React.
+A static website for Author Brian Baynton. Created with React, using framer motion for background and swiper for showing books and with responsive design.
 
 Hosted on [here](https://brianbaynton.netlify.app/)
+
+### Final Product
+
+![responsive](https://user-images.githubusercontent.com/90123125/188973577-fdec5201-ef1d-42d4-8d2f-a858fb327643.gif)
 
 ### To see it on your local environment
 
