@@ -1,8 +1,9 @@
 @import './App.scss';
 
 .a-wrapper{
-  height: 80vh;
+  height: auto;
   margin-top: -3rem;
+  margin-bottom: 4rem;
   position: relative;
 }
 
@@ -47,9 +48,10 @@
 .a-bottom {
   display: flex;
   align-items: center;
-  width: 40rem;
+  width: 50rem;
   color: $gray;
   z-index: 1;
+  text-align: justify;
 }
 
 /*  Small Device Styles */
@@ -59,18 +61,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     margin-bottom: 30rem;
+    position: relative;
   }
 
 .a-background{
-  position: relative;
+  position: absolute;
   margin-left: -45rem;
+  margin-bottom: 9rem;
 }
 
   .a-background > img {
     transform: scale(0.8);
-    position: absolute;
-    margin-top: 18rem;
     opacity: 1;
   }
 
@@ -93,18 +96,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30rem;
+    justify-content: flex-end;
+    padding-bottom: 30rem;
+    position: relative;
   }
 
   .a-background{
-    position: relative;
-    margin-left: -40rem;
+    position: absolute;
+    margin-left: -60rem;
+    margin-bottom: 10rem;
   }
 
   .a-background > img {
     transform: scale(0.8);
-    position: absolute;
-    margin-top: 10rem;
     opacity: 1;
   }
 
@@ -123,7 +127,7 @@
 
 @media (min-width: 741px) and (max-width: 905px) {
   .a-wrapper{
-    height: 60vh;
+    height: auto;
   }
 
   .a-background{
@@ -132,9 +136,13 @@
   }
 
   .a-background > img {
-    transform: scale(0.7);
+    transform: scale(0.8);
     position: absolute;
-    margin-bottom: -10rem;
+    margin-top: 20rem;
     opacity: 0.3;
+  }
+  
+  .a-bottom{
+    width: 90%;
   }
 }
