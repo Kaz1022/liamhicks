@@ -8,8 +8,8 @@ import LiamHicks from './components/LiamHicks/LiamHicks';
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <div className="App">
+        <ScrollToTop />
         <Routes>
           <Route exact path ="/" element={<Home />}/>
           <Route exact path ="/liamhicks" element={<LiamHicks />}/>
