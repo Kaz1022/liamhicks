@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 10;
 }
 
 .n-button{
@@ -197,9 +198,9 @@
 }
 
 /*  Desk Top Styles */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 906px) {
   .n-wrapper{
-    margin-top: -0.5rem;
+    margin-top: 0rem;
     height: 10vh;
     width: 100%;
     font-family: $second-font;
