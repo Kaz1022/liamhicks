@@ -7,7 +7,7 @@
   margin-top: 10vh;
 }
 
-.bi-top{
+.bi-top {
   display: flex;
   justify-content: center;
   font-family: $third-font;
@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.bi-top > h1{
+.bi-top>h1 {
   z-index: 2;
   position: absolute;
 }
@@ -28,19 +28,19 @@
   margin-right: -5%;
 }
 
-.bi-background > img {
+.bi-background>img {
   margin-top: -4rem;
   position: absolute;
   opacity: 0.3;
   transform: scale(0.8);
 }
 
-.bi-bottom{
+.bi-bottom {
   margin-top: 7rem;
   z-index: 1;
 }
 
-.bookslist{
+.bookslist {
   padding-right: 2rem;
   padding-left: 2rem;
   display: flex;
@@ -60,38 +60,38 @@
     z-index: 0;
     display: flex;
     opacity: 0.6;
-   }
+  }
 
-   .bi-background > img{
+  .bi-background>img {
     // transform: scale(0.5);
     margin-top: -8rem;
   }
 
-  .bi-top{
+  .bi-top {
     font-size: 0.8rem;
     margin-bottom: -10rem;
   }
 
-  .bi-bottom{
+  .bi-bottom {
     transform: scale(0.8);
   }
 
-  .bookslist{
+  .bookslist {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
-  
+
   }
 }
 
 /*  Small Device Styles */
 @media (max-width: 388px) {
-  .bi-top{
+  .bi-top {
     font-size: 0.6rem;
   }
 
-  .bi-background > img{
+  .bi-background>img {
     transform: scale(0.4);
     margin-top: -18rem;
     margin-right: -12rem;
@@ -107,40 +107,40 @@
     height: auto;
   }
 
-  .bi-background > img{
+  .bi-background>img {
     transform: scale(0.7);
     margin-top: -10rem;
     margin-right: -3rem;
   }
 
-  .bi-top{
+  .bi-top {
     font-size: 1rem;
     margin-bottom: -5rem;
   }
 
-  .bi-bottom{
+  .bi-bottom {
     transform: scale(0.6);
   }
 }
 
 /*  Smaller Tablet Styles */
-@media (min-width: 741px) and (max-width: 905px) {
+@media (min-width: 741px) and (max-width: 1200px) {
   .bintro-wrapper {
     height: auto;
     margin-bottom: 4rem;
   }
 
-  .bi-background > img{
+  .bi-background>img {
     transform: scale(0.7);
     margin-top: -8rem;
   }
 
-  .bi-top{
+  .bi-top {
     font-size: 1rem;
     margin-bottom: -2rem;
   }
 
-  .bi-bottom{
-    transform: scale(0.8);
+  .bi-bottom {
+    transform: scale(0.65);
   }
 }
